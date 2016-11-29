@@ -1,0 +1,124 @@
+# Pursuit, copyright (c) 2016 Ben Kybartas <bkybartas@gmail.com>
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+# SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+# IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+#
+# 29 November 2014
+
+#Grammar Desc:
+# Symbols, wrapped in # e.g. #story#
+# format: symbol:exp1;exp2;exp3
+
+#Story Structure
+#----------------
+
+#Main Main
+
+main:#paranoia#;#spy#;#meeting#;#blame#
+
+#--------------------Intro-----------------------
+intro_main:The event happens.& #intro_oh_no#.& #intro_what#.
+intro_oh_no:#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#. #intro_oh_no#;#intro_0#
+intro_0:#intro_1# is #intro_2#
+intro_1:Information;Peace;Stability;Finances;The stock market;The status quo;Infrastructure;Culture;Freedom;Security
+intro_2:destroyed;twisted;compromised;befouled;withered;torn asunder;bled;broken;shattered;burned;sacrificed;dissolved
+intro_what:#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#. #intro_what#;#intro_line#
+intro_line:It #intro_verbs# the #intro_who#
+intro_verbs:terrifies;frightens;panics;petrifies;scares;disgusts;shocks;traumatizes;disturbs
+intro_who:housewives;government;media;journalists;academics;scientists;liberals;conservatives;middle-class;upper-class;lower-class;rebels;religious;do-gooders;advertisers;corporates;elites
+
+#--------------------Spying-----------------------
+spy:#spy_1# #spy_mid# #spy_2#
+spy_1:Because of a #spy_reason#, #person#, while #activity_description#, #spying# of
+
+spy_mid:#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0# #spy_mid#;#spy_0#
+spy_0:#person#, #activity_description#, who #spying# of
+
+spy_2:#person#, #activity_description#. #spy_result#...
+
+spy_reason:hunch;lead;suspicious article;cryptic note;conversation;dream;report
+spy_result:Their #personal_information# is noted;An arrest warrent is issued;The authorities promise to look into it further;However it leads nowhere;Suspicions are raised
+
+person:a #job#
+job:government official;scientist;police officer;drug dealer;computer programmer;researcher;dock worker;bus driver;model;prosititute;vagrant;janitor;cook;socialite;blogger;journalist;web developer  
+activity_description:#data_modification# their #personal_information#
+spying:acquires the #personal_information#;#how_seen# the #camera_frame#
+
+how:systematically;aggressively;worriedly;hastily;discretely;mindlessly;digitally;virtually
+data_modification:crossing-out;deleting;encrypting;downloading;backing-up;updating;downgrading;upgrading
+#Physical Description
+
+#Activity Description
+
+personal_information:name;address;fingerprints;#body_part#-sample;#document_types# record;social media account
+body_part:hair;skin;blood;saliva
+document_types:medical;criminal;government;employment;online-activity;cellphone;housing;tax;business;education
+
+how_seen:looks through;records;gazes into;uploads;downloads;decrypts;pours over
+camera_frame:webcam;#personal_information#;hardrive;usb key
+
+#--------------------Chasing-----------------------
+chase:The suspect #suspect_what#. The pursuers #suspect_guard#.
+suspect_what:ducks into an alleyway;crashes through a window;runs down a hallway;slips into the sewers;hides to catch their breath;twists through a staircase;darts under an overpass;hops between the rooftops;narrowly escapes a hail of bullets
+suspect_guard:run past;stop to catch their breath;fire a warning shot;call for reinforcements;shout threats;pick up speed;falter
+
+#----------------------Blame-----------------------
+blame:After #why_blame# is #info_what# to the public, #blame_who# #blame_0#. #blame_result#...
+why_blame:misinformation;too much information;too little information;a false suspect;biased information;manipulated information;A secret police file; The suspect's #personal_information#;A false suspect's #personal_information#
+info_what:spread;given;revealed;leaked
+blame_0:#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# who #blame_0#;#blame_1# #blame_why# and who #blame_0#;#blame_1# who #blame_0#;#blame_1# and who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1# #blame_why# who #blame_0#;#blame_1#
+blame_1:#how_blame# #blame_who#
+blame_who:liberal media;conservative media;academia;the government;the mainstream news sites;the liberals;the conservatives;the socialists;the communists;the anarchists;the elite;the corporates;the neoliberals
+blame_why:for being too #too_what#
+too_what:liberal;conservative;radical;extremist;suspicious;scared;reactionary;oversensitive;censored;politicized;amoral
+how_blame:blames;fault;accuses;decries;defends
+blame_result:The public becomes divided;Tensions ease soon after;Tensions grow stronger;#blame_who# fall in public opinion;#blame_who# get less public air time on television;The vocal supporters of #blame_who# receive threatening letters;A vocal supporter of #blame_who# goes missing.
+
+#------------------Secret Meeting-------------------
+meeting:\textit{Location& #sm_where#}. \n#sm_talk# \n\textit{#sm_after_pre#}. \n\textit{#sm_after#}...
+sm_talk:#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line# \n#sm_talk#;#dialogue_line#
+dialogue_line:\textsc{#sm_who#}& "#sm_say_what#"
+sm_say_what:I can decrypt this;I found something important;Did you find out anything new?;We'll close in on #him_her# soon;Someone is watching this thread;You're crazy;I think I'm being followed;#sm_who# is not who they say they are;Stop joking around;Lies;Can you believe #blame_who#?;This is the fault of #blame_who#;What are you talking about?;I know who did it;I found it!;They took #him_her# away from me;#curse#
+sm_who:User One;User Two;User Three;User Four;User Five
+sm_what_kind:encrypted;secretive;monitored;untraceable
+sm_where:a #sm_what_kind# online discussion
+sm_after_pre:The chat #sm_chat_what#
+sm_chat_what:is disconnected;loses connection;is closed by #sm_who#;goes silent
+sm_after:Later, #sm_who# #sm_does_what# and gives them the #personal_information# of #sm_who#;#sm_who# stops recording the chat;#sm_who# hears a door open behind them
+sm_does_what:calls a private number;goes to their contact;calls their superior;meets a cloaked figure on the street
+him_her:him;her
+curse:#swearword# #curse#;#swearword#
+swearword:fuck;shit;damn
+
+#----------------Paranoia--------------------------
+paranoia:\textit{#pa_intro#} #pa_ranoia# \textit{#pa_end#}...
+pa_intro:A #pa_who# is #pa_intro_what#.
+pa_intro_what:holding a gun to their head;fighting off an infestation of #pa_pests#;typing frantically on a computer;having a bad trip;hiding in #pa_where#
+pa_who:#pa_adjective# #pa_person#
+pa_adjective:stoned;wiry;disshevelled;frantic;shivering;crying;spaced-out;twitchy
+pa_person:addict;hacker;nobody;man;woman;teenager;rebel
+pa_what_happens:They trip over a #pa_furniture#;They #pa_go# to #pa_where#;They kick away some #pa_pests#;They try to open the #pa_exit# but it won't budge;
+pa_go:run;go;creep;wander
+pa_exit:front door;window;back door
+pa_where:the garage;the bathroom;the server room;the bedroom;the basement
+pa_furniture:chair;computer wires;trash;pizza box;stack of printouts;briefcase
+pa_pests:rats;centipedes;termites;cockroaches
+pa_say_what0:They're onto me;The damn #pa_pests# are back;They know;Where can I hide?;I have to get out of here;I hear someone in the house;They're trying to shut me up;I hear them closing in;They're all around me
+pa_ranoia:#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what# #pa_ranoia#;#pa_say_what#
+pa_say_what:"#curse#" "#pa_say_what0#";"#curse#" \textit{#pa_what_happens#}
+pa_end:The #pa_pests# flood into the room;A mysterious stranger draws closer;The lights in the room cut out;They pass out;#pa_what_happens#
+
+#-----------Conclusion-------------------------
+conclusion:#conclude#...
+conclude:#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase# #conclude#;#chase_caught#;#chase_escape#
+chase_caught:The suspect is caught
+chase_escape:The suspect escapes
